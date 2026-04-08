@@ -1,1 +1,2 @@
 # py-dev
+Python fundamentals
