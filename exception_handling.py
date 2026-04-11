@@ -122,7 +122,7 @@ def safe_llm_call(prompt: str, max_retries: int = 3) -> str:
                 raise ConnectionError("LLM API timeout")
 
             # Simulate successful response
-            return f"LLM response to: '{prompt[:30]}...'"
+            return f"LLM response to: '{prompt[:50]}...'"
 
         except ConnectionError as e:
             print(f"  ⚠️  Attempt {attempt}/{max_retries} failed: {e}")
